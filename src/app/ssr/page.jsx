@@ -1,3 +1,4 @@
+import SeriesList from '@components/SeriesList'
 import axios from "axios";
 
 export default async function GetPage() {
@@ -29,13 +30,7 @@ export default async function GetPage() {
                 acontece no servidor.
             </p>
 
-            <ul>
-                {series.map((serie) => (
-                    <li key={serie.id}>
-                        {serie.title}
-                    </li>
-                ))}
-            </ul>
+            <SeriesList series={series}></SeriesList>
         </main>
     );
 }
