@@ -14,7 +14,6 @@ export default function Header() {
         examples.find((e) => pathname === `/${e.method.toLowerCase()}`);
 
     const method = pathname === '/' ? 'CRUD' : operation?.method || '404';
-    const color = pathname === '/' ? 'black' : operation?.color || 'red';
 
     return (
         <header className={styles.header}>
@@ -32,7 +31,7 @@ export default function Header() {
                     </p>
                 </div>
             </div>
-            <h1 style={{ color }}>{method.toUpperCase()}</h1>
+            <h1>{method.toUpperCase()}</h1>
         </header>
     );
 }

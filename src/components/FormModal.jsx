@@ -13,7 +13,7 @@ export default function FormModal({ openModal, serie, confirmLoading, onSubmit, 
             onOk={() => form.submit()}
             onCancel={onCancel}
             confirmLoading={confirmLoading}
-            destroyOnClose
+            destroyOnHidden
         >
             <Form 
                 form={form} 

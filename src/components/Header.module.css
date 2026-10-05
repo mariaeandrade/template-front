@@ -1,9 +1,10 @@
 .header {
-    background-color: lightskyblue;
+    background-color: var(--surface-background);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .header h1 {
@@ -42,6 +43,7 @@
 .verb {
     font-weight: bold;
     text-decoration: none;
+    color: var(--accent-color);
 }
 
 .verb:hover {
